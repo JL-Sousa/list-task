@@ -9,10 +9,15 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: rgb(57, 57, 57);
 }
 
 .conteiner{
     margin: 50px;
+    background: rgb(129, 127, 127);
+    min-height: 400px;
+    min-width: 300px ;
+    border-radius: 4px;
 
 }
 
@@ -21,18 +26,21 @@ body{
     justify-content: space-between;
     margin-left: 38px;
     margin-top: 30px;
+    padding: 10px;
 }
 
 
 .listaTarefas h1{
     margin-bottom: 30px;
-    margin-left: 35px;
+    color: black;
+    text-align: center;
 }
 
 .listaTarefas input{
     padding: 8px;
     margin-right: 10px;
     border-radius: 5px;
+    outline: none;
 
 }
 
@@ -40,4 +48,19 @@ body{
     padding: 8px;
     margin-left: 10px;
     border-radius: 5px;
+}
+
+.btn{
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.list ul{
+    list-style-type: none;
+    color: white;
+}
+
+.listaTarefas{
+    padding: 8px;
 }
