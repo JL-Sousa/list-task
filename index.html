@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LIST TASK</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div>
-        
+    <div class="conteiner">
+        <div class="listaTarefas">
+            <h1>LIST TASK</h1>
+            <input type="text" placeholder="Digite Sua Tarefa" id="tarefa">
+            <button onclick={teste1()}>Adicionar</button>
+        </div>
+        <div class="list">
+            <div class="prioridades">
+                <h2>Prioridade</h2>
+                <ul id="prioridades">
+                    
+                </ul>
+            </div>
+            <div class="outras">
+                <h2 class="h2">Outras</h2>
+                <ul id="outras">
+                 
+                </ul>
+            </div>
+        </div>
     </div>
-    
+    <script>
+        function teste1(){
+            
+            let valortarefa = document.getElementById("tarefa").value;
+            let ullistar = document.getElementById("prioridades");
+            
+            ullistar.innerHTML = ullistar.innerHTML + valortarefa;
+
+
+            console.log(valortarefa)
+            console.log(ullistar)
+        }
+        
+    </script>
 </body>
 </html>
